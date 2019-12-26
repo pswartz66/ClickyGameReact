@@ -1,0 +1,30 @@
+
+
+.jumbotron-fluid {
+    background-color: #557A95;
+}
+
+.header-main {
+    color: rgb(0, 0, 0);
+    font-family: 'Muli', sans-serif!important;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 1px 4px #7395AE;
+}
+
+.header-sub {
+    color: rgb(0, 0, 0);
+    font-family: 'Muli', sans-serif!important;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7395AE;
+
+
+}
+
+.lead {
+    color: rgb(0, 0, 0);
+    font-family: 'Muli', sans-serif!important;
+    text-align: center;
+    text-shadow: 1px 1px 2px #7395AE;
+
+}

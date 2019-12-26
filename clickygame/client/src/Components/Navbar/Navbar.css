@@ -12,8 +12,13 @@
 }
 
 .navbar-nav {
+    display: inline-block;
     width: 33%;
     display: flex;
     justify-content: center!important;
     
+}
+
+.nav-item {
+    text-align: center;
 }

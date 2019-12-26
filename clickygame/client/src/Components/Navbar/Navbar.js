@@ -12,13 +12,12 @@ const Navbar = props => {
             </ul>
 
             <ul className="navbar-nav">
-                <li className="nav-item">Click and image to begin!</li>
+                <li className="nav-item">Click an image to begin!</li>
             </ul>
 
             <ul className="navbar-nav">
                 <li className="nav-item">Score: 0 | Top Score: 0</li>
             </ul>
-
 
         </nav>
 

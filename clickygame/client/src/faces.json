@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "image": "./src/images/Richard.jpg",
+        "shake": 0
+    },
+    {
+        "id": 2,
+        "image": "../public/images/Bighead.jpg",
+        "shake": 0
+    },
+    {
+        "id": 3,
+        "image": "../public/images/Dinesh.jpg",
+        "shake": 0
+    },
+    {
+        "id": 4,
+        "image": "../public/images/Erlich.jpg",
+        "shake": 0
+    },
+    {
+        "id": 5,
+        "image": "../public/images/Gavin.jpg",
+        "shake": 0
+    },
+    {
+        "id": 6,
+        "image": "../public/images/Gilfoyle.jpg",
+        "shake": 0
+    },
+    {
+        "id": 7,
+        "image": "../public/images/Jared.jpg",
+        "shake": 0
+    },
+    {
+        "id": 8,
+        "image": "../public/images/Jianyang.jpg",
+        "shake": 0
+    },
+    {
+        "id": 9,
+        "image": "../public/images/Monica.jpg",
+        "shake": 0
+    }
+]
