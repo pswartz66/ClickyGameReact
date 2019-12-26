@@ -1,0 +1,19 @@
+
+
+.nav-main {
+    background-color: #565C61!important;
+    height: 60px;
+    color: ghostwhite;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    display: flex;
+    z-index: 99;
+}
+
+.navbar-nav {
+    width: 33%;
+    display: flex;
+    justify-content: center!important;
+    
+}
