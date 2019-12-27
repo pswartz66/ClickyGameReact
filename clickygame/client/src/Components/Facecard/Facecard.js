@@ -1,12 +1,12 @@
 import React from 'react';
-
+import './Facecard.css'
 
 const Facecard = props => {
 
     return (
     <div className="card">
         <div className="img-container">
-            <img alt={props.id} src={props.image}/>
+            <img className="card-image" alt={props.name} src={props.image}/>
 
         </div>
     </div>

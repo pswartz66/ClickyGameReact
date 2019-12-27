@@ -1,0 +1,22 @@
+
+.footer {
+    height: 100px;
+    background-color: #557A95;
+    position: relative;
+    overflow: auto;
+    
+}
+
+
+.footer>.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(40, 67, 87);
+    padding: 8px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    
+}
