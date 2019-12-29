@@ -3,73 +3,73 @@
         "id": 1,
         "name": "Richard",
         "image": "https://pmcvariety.files.wordpress.com/2017/05/thomas-middleditch.png?w=1000&h=563&crop=1",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 2,
         "name": "Bighead",
         "image": "http://marrieddivorce.com/uploads/images/Josh%20Brener(1).jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 3,
         "name": "Dinesh",
         "image": "https://api.time.com/wp-content/uploads/2018/04/time-100-kumail-nanjiani.jpg?quality=85&zoom=2",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 4,
         "name": "Erlich",
         "image": "https://pixel.nymag.com/imgs/daily/vulture/2017/05/25/25-tj-miller.w330.h330.2x.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 5,
         "name": "Gavin",
         "image": "https://www.celebheights.com/xr/m/matt-ross.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 6,
         "name": "Gilfoyle",
         "image": "https://www.indiewire.com/wp-content/uploads/2016/06/martin-starr.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 7,
         "name": "Jared",
         "image": "https://pmcvariety.files.wordpress.com/2019/02/zach-woods.jpg?w=1000&h=563&crop=1",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 8,
         "name": "Jianyang",
         "image": "https://i.ticketweb.com/i/00/06/32/72/11/Original.jpg?v=6",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 9,
         "name": "Monica",
         "image": "https://healthyceleb.com/wp-content/uploads/2019/11/Amanda-Crew-as-seen-in-a-picture-showing-her-new-hair-in-April-2017.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 10,
         "name": "Lori",
         "image": "https://marriedbiography.com/wp-content/uploads/2018/05/Suzanne-Cryer-1.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 11,
         "name": "Peter",
         "image": "https://pixel.nymag.com/imgs/daily/vulture/2014/04/08/08-christopher-evan-welch-2.w700.h467.2x.jpg",
-        "shake": 0
+        "clicked": 0
     },
     {
         "id": 12,
         "name": "Russ",
         "image": "https://cdn1.thr.com/sites/default/files/imagecache/NFE_portrait/2013/05/chris_diamantopoulos_headshot_a_p.jpg",
-        "shake": 0
+        "clicked": 0
     }
 ]
 

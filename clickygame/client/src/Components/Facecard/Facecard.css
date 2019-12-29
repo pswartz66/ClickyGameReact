@@ -8,13 +8,19 @@
     float: left;
   }
   
-  .card > .img-container {
-    
+
+.card > .img-container {
     text-align: center;
     background:#6CADDC;
-  }
+}
 
-  .card-image {
-      height: 180px;
-      width: 200px;
-  }
+.card-image {
+    height: 180px;
+    width: 200px;
+}
+
+
+.card:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
