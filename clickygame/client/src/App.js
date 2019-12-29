@@ -13,14 +13,13 @@ class App extends React.Component {
     this.state = {
       faces,
       score: 0,
-      topScore: 0,
+      topScore: [0],
       guessedIds: [],
       status: ""
     }
   }
 
   componentDidMount() {
-
     // shuffle Facecards on initial refresh (i.e. when page is refreshed)
     this.randomizeFaces(this.state.faces);
   }
@@ -29,8 +28,16 @@ class App extends React.Component {
   handleIncrement = (id) => {
 
     if (this.state.guessedIds.includes(id)) {
+      // logic explaining that game has ended and will be reset
+      console.log('already clicked this picture');
 
-      // add logic explaining that game has ended
+      if (this.state.score >= this.state.guessedIds.length) {
+      // reset score back to 0
+      this.setState({ score: 0, 
+                      status: "You guessed incorrectly", 
+                      topScore: this.state.guessedIds.length,
+                      guessedIds: []});
+      }
 
     } else {
 
@@ -39,37 +46,28 @@ class App extends React.Component {
       console.log(this.state.guessedIds);
 
       // update the components score when clicked once
-      this.setState({ score: this.state.score + 1 });
-
+      this.setState({ score: this.state.score + 1, 
+                      status: "You guessed correctly", 
+                      });
+      
     }
-
-
     // shuffle Facecards when card is clicked
     this.randomizeFaces(this.state.faces);
-    
-
   };
 
   randomizeFaces = (arr) => {
     // shuffle Facecards
     arr.sort(() => 0.5 - Math.random());
-
     // set the faces object to the new shuffled array
     this.setState({ faces: arr })
-
-    // console.log(this.state.faces)
   }
 
-
-  
   render() {
-
     return (
       <div>
-        <Navbar score={this.state.score} />
+        <Navbar status={this.state.status} score={this.state.score} topScore={this.state.topScore} />
         <Header />
         <Container>
-
         {this.state.faces.map(face => (
           <Facecard 
             id={face.id}
@@ -79,9 +77,7 @@ class App extends React.Component {
           />)
         )}
         </Container>
-
         <Footer />
-
       </div>
     );
   }
