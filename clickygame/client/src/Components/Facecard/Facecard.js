@@ -4,9 +4,9 @@ import './Facecard.css'
 const Facecard = props => {
 
     return (
-    <div className="card" onClick={props.handleIncrement}>
+    <div className="card">
         <div className="img-container">
-            <img className="card-image" alt={props.name} src={props.image}/>
+            <img onClick={() => props.handleIncrement(props.id)} className="card-image" id={props.id} alt={props.name} src={props.image}/>
 
         </div>
     </div>

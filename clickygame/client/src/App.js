@@ -14,7 +14,7 @@ class App extends React.Component {
       faces,
       score: 0,
       topScore: 0,
-      guessed: false,
+      guessedIds: [],
       status: ""
     }
   }
@@ -25,13 +25,28 @@ class App extends React.Component {
     this.randomizeFaces(this.state.faces);
   }
 
-  // increases this.state.score by 1
-  handleIncrement = () => {
-    // update the components state on each click
-    this.setState({ score: this.state.score + 1 });
+  // increases this.state.score by 1 when card is clicked
+  handleIncrement = (id) => {
+
+    if (this.state.guessedIds.includes(id)) {
+
+      // add logic explaining that game has ended
+
+    } else {
+
+      // pushed clicked Id in the guessedIds array
+      this.state.guessedIds.push(id);
+      console.log(this.state.guessedIds);
+
+      // update the components score when clicked once
+      this.setState({ score: this.state.score + 1 });
+
+    }
+
 
     // shuffle Facecards when card is clicked
     this.randomizeFaces(this.state.faces);
+    
 
   };
 
