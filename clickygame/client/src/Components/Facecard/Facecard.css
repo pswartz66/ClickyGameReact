@@ -24,3 +24,14 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
+.shake {
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0.0125s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: shake;
+}

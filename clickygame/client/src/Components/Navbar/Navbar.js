@@ -16,7 +16,7 @@ const Navbar = props => {
             </ul>
 
             <ul className="navbar-nav">
-                <li className="nav-item">Score: {props.score} | Top Score: {props.topScore}</li>
+                <li className="nav-item">Score: {props.score} | Top Score: {props.maxScore}</li>
             </ul>
 
         </nav>

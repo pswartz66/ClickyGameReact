@@ -13,7 +13,8 @@ class App extends React.Component {
     this.state = {
       faces,
       score: 0,
-      topScore: [0],
+      topScores: [0],
+      maxScore: 0,
       guessedIds: [],
       status: ""
     }
@@ -28,23 +29,25 @@ class App extends React.Component {
   handleIncrement = (id) => {
 
     if (this.state.guessedIds.includes(id)) {
-      // logic explaining that game has ended and will be reset
-      console.log('already clicked this picture');
+      // set a variable to get the max of the topScores array
+      let maximumScore = Math.max(...this.state.topScores);
+      // filterTopScores to reduce size and duplicates
+      let filteredTopScores = this.state.topScores.filter(num => num >= Math.max(...this.state.topScores));
 
       if (this.state.score >= this.state.guessedIds.length) {
       // reset score back to 0
       this.setState({ score: 0, 
                       status: "You guessed incorrectly", 
-                      topScore: this.state.guessedIds.length,
+                      maxScore: maximumScore,
+                      topScores: filteredTopScores,
                       guessedIds: []});
       }
-
     } else {
 
       // pushed clicked Id in the guessedIds array
       this.state.guessedIds.push(id);
-      console.log(this.state.guessedIds);
-
+      // push length of guessedIds into the topScores array
+      this.state.topScores.push(this.state.guessedIds.length);
       // update the components score when clicked once
       this.setState({ score: this.state.score + 1, 
                       status: "You guessed correctly", 
@@ -65,7 +68,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar status={this.state.status} score={this.state.score} topScore={this.state.topScore} />
+        <Navbar status={this.state.status} score={this.state.score} maxScore={this.state.maxScore} />
         <Header />
         <Container>
         {this.state.faces.map(face => (
