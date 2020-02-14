@@ -4,7 +4,7 @@
 
 ClickyGameReact is a web application where a user can click on images and tally up their score to try and reach the high score. As the title mentions this was built using the react framework so it contains components, state, and props.
 
-Deployed live here: 
+Deployed live here: https://pswartz66.github.io/ClickyGameReact/
 
 ### Instructions
 
